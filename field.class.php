@@ -39,14 +39,14 @@ class data_field_lockabletextarea extends data_field_textarea {
     /** @var string The internal datafield type */
     public $type = 'lockabletextarea';
 
-   /**
-    * Output control for editing content.
-    *
-    * @param int $recordid the id of the data record.
-    * @param object $formdata the submitted form.
-    *
-    * @return string
-    */
+    /**
+     * Output control for editing content.
+     *
+     * @param int $recordid the id of the data record.
+     * @param object $formdata the submitted form.
+     *
+     * @return string
+     */
     public function display_add_field($recordid = 0, $formdata = null) {
         global $DB;
 
