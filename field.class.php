@@ -88,7 +88,7 @@ class data_field_lockabletextarea extends data_field_textarea {
         global $DB;
 
         $context = \context_module::instance($this->cm->id);
-        if (has_capability('datafield/lockabletextarea:manage', $context)) {
+        if (!has_capability('datafield/lockabletextarea:manage', $context)) {
             return true;
         }
 
